@@ -15,3 +15,4 @@ coding-background-blurr : Photo by Ilya Pavlov on Unsplash
 background-computer: Photo by Fabian Grohs on Unsplash
 double-computer-background : Photo by Safar Safarov on Unsplash
 coding-background : Photo by Chris Ried on Unsplash
+background-computer-center : Photo by Arnold Francisca on Unsplash
