@@ -3,6 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+    overflow: hidden;
+}
 
 * {
   margin: 0;
@@ -38,6 +41,18 @@ section h1 {
   text-align: center;
   white-space: nowrap;
 }
+section p {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font : normal 300 28px/1 'Comfortaa', cursive;
+    text-align: center;
+    white
+}
 
 #start { background: url('../images/background-computer-center.jpg') center center / cover no-repeat;}
 #presentation { background: url(https://picsum.photos/1200/800?image=869) center center / cover no-repeat;}
@@ -45,7 +60,7 @@ section h1 {
 .scroll a {
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 48%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
