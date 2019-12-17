@@ -4,10 +4,21 @@
         <title>NOM Prénom - Portfolio</title>
         <link rel="icon" type="image/jpg" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="assets/css/style.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:500&display=swap" rel="stylesheet">
     </head>
 
     <!-- Corps de la page -->
     <body>
+        
+        <section id="section02" class="demo">
+            <h1>Scroll Down Button #2</h1>
+            <a href="#section03"><span></span>Scroll</a>
+        </section>
+        <section id="section03" class="demo">
+          <h1>Scroll Down Button #3</h1>
+          <a href="#section02"><span></span>Scroll</a>
+        </section>
+        
         <!-- Header -->
         <header>
 
@@ -16,11 +27,6 @@
 
             </nav>
 
-            <a class="next" href="/item3">
-                <span class="icon-wrap"><svg class="icon" width="28" height="28" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
-                <div><img src="img/7.png" alt="Next thumb"></div>
-            </a>
-
         </header>
 
         <!-- Footer -->
@@ -28,7 +34,11 @@
 
         </footer>
 
-        <!-- Scripts -->
 
     </body>
+
+    <!-- Scripts -->
+    <script src="assets/js/button.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </html>
