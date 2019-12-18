@@ -1,3 +1,5 @@
+Jour 1
+
 09:54
 Création du répository GitHub pour la gestion du projet.
 
@@ -12,6 +14,16 @@ Création de la page contenant la photo de la personne et son CV
 
 14:53
 Recherches sur le plugin "fullPage.js" pour permettre à l'utilisateur de scroll sur une partie de la page principale.
+
+
+Jour 2
+
+10:10
+Page de test pour intégrer fullPage.js opérationnelle.
+
+
+
+
 
 Copyrights images:
 
