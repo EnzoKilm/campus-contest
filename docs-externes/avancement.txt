@@ -21,7 +21,11 @@ Jour 2
 10:10
 Page de test pour intégrer fullPage.js opérationnelle.
 
+13:48
+Ajout de fullPage.js au site.
 
+15:43
+Correction de bugs toute la journée.
 
 
 
@@ -32,3 +36,4 @@ background-computer: Photo by Fabian Grohs on Unsplash
 double-computer-background : Photo by Safar Safarov on Unsplash
 coding-background : Photo by Chris Ried on Unsplash
 background-computer-center : Photo by Arnold Francisca on Unsplash
+background-space : Photo by Jason Blackeye on Unsplash

@@ -54,8 +54,8 @@ section.scroll p {
     padding-top: 35px;
 }
 
-#start { background: url('../images/background-computer-center.jpg') center center / cover no-repeat;}
-#presentation { background: url('../images/coding-background.jpg') center center / cover no-repeat;}
+/* #start { background: url('../images/background-computer-center.jpg') center center / cover no-repeat;}
+#presentation { background: url('../images/coding-background.jpg') center center / cover no-repeat;} */
 
 .scroll a {
   position: absolute;
