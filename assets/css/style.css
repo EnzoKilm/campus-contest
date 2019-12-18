@@ -51,11 +51,11 @@ section.scroll p {
     color: #fff;
     font : normal 300 28px/1 'Comfortaa', cursive;
     text-align: center;
-    white
+    padding-top: 35px;
 }
 
 #start { background: url('../images/background-computer-center.jpg') center center / cover no-repeat;}
-#presentation { background: url(https://picsum.photos/1200/800?image=869) center center / cover no-repeat;}
+#presentation { background: url('../images/coding-background.jpg') center center / cover no-repeat;}
 
 .scroll a {
   position: absolute;
@@ -74,7 +74,6 @@ section.scroll p {
 .scroll a:hover {
   opacity: .5;
 }
-
 
 #start a {
   padding-top: 60px;
@@ -105,46 +104,9 @@ section.scroll p {
   box-sizing: border-box;
 }
 
-#presentation a {
-    padding-top: 60px;
-  }
-  #presentation a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    box-sizing: border-box;
-  }
-  #presentation a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
-  #presentation a span::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: '';
-    width: 44px;
-    height: 44px;
-    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-    border-radius: 100%;
-    opacity: 0;
-    -webkit-animation: sdb03 3s infinite;
-    animation: sdb03 3s infinite;
-    box-sizing: border-box;
-  }
+
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white;
+}

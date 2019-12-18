@@ -3,43 +3,131 @@
     <head>
         <title>NOM Prénom - Portfolio</title>
         <!-- <link rel="icon" type="image/jpg" href="assets/images/favicon.ico"> -->
+        <!-- <link rel="stylesheet" href="assets/css/test.css"></link> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:500&display=swap">
+        <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css"></link>
         <link rel="stylesheet" href="assets/css/style.css"></link>
-        <link rel="stylesheet" href="assets/css/fullpage.css"></link>
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa:500&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.fullpage.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.fullpage.extensions.min.js"></script>
     </head>
 
     <!-- Corps de la page -->
     <body>
-        <!-- Header -->
-        <header>
-            <!-- Menu -->
-            <nav>
+        <div id="fullpage">
+            <section id="start" class="scroll">
+                <h1>NOM Prénom
+                    <p>Développeur web</p>
+                </h1>
+                <div class="scroll-icon">
+                    <a href="#"><span></span>Suite</a>
+                </div>
+            </section>
+            <section class="scroll">
+                <h2>fullPage.js</h2>
+                <h3>This is the second section</h3>
+            </section>
+            <section class="scroll">
+                <h2>fullPage.js</h2>
+                <h3>This is the third section</h3>
+            </section>
+            <section class="scroll">
+                <h2>fullPage.js</h2> 
+                <h3>This is the fourth section</h3>
+            </section>
+            <section class="scroll">
+                <div class="horizontal-scrolling">
+                    <h2>fullPage.js</h2>
+                    <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+                </div>
+                <div class="horizontal-scrolling">
+                    <h2>fullPage.js</h2>
+                    <h3>This is the second slide</h3> 
+                    <p class="end">Thank you!</p>
+                </div>
+            </section>
+        </div>
 
-            </nav>
-        </header>
+        <!-- Scripts -->
+        <script type="text/javascript">
+        // variables
+        var $header_top = $('.header-top');
+        var $nav = $('nav');
 
-        <section id="start" class="scroll">
-            <h1>NOM Prénom</h1>
-            <p>Développeur web</p>
-            <a href="#presentation"><span></span>Suite</a>
-        </section>
-        <section id="presentation" class="scroll">
-            <h1></h1>
-            <a href="#start"><span></span></a>
-        </section>
+
+        //adding the action to the button
+        $(document).on('click', '#moveDown', function(){
+        fullpage_api.moveSectionDown();
+        });
+
+
+        // toggle menu 
+        $header_top.find('a').on('click', function() {
+        $(this).parent().toggleClass('open-menu');
+        });
+
+
+
+        // fullpage customization
+        $('#fullpage').fullpage({
+        sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
+        sectionSelector: '.scroll',
+        slideSelector: '.horizontal-scrolling',
+        navigation: true,
+        slidesNavigation: true,
+        controlArrows: false,
+        anchors: ['start', 'presentation', 'thirdSection', 'fourthSection', 'fifthSection'],
+        easing: 'easeOutBack',
+        scrollingSpeed: 800,
+        parallax: true,
+
+
+        afterLoad: function(anchorLink, index) {
+            $header_top.css('background', 'rgba(0, 47, 77, .3)');
+            $nav.css('background', 'rgba(250, 47, 77, .25)');
+            // if (index == 1) {
+            //     $('#fp-nav').hide();
+            // }
+            // else {
+            //     $('#fp-nav').show();
+            // }
+        },
+
+        onLeave: function(index, nextIndex, direction) {
+            if(index == 5) {
+            $('#fp-nav').show();
+            }
+        },
+
+        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+            if(anchorLink == 'fifthSection' && slideIndex == 1) {
+            $.fn.fullpage.setAllowScrolling(false, 'up');
+            $header_top.css('background', 'transparent');
+            $nav.css('background', 'transparent');
+            $(this).css('background', '#374140');
+            $(this).find('h2').css('color', 'white');
+            $(this).find('h3').css('color', 'white');
+            $(this).find('p').css(
+                {
+                'color': '#DC3522',
+                'opacity': 1,
+                'transform': 'translateY(0)'
+                }
+            );
+            }
+        },
+
+        onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+            if(anchorLink == 'fifthSection' && slideIndex == 1) {
+            $.fn.fullpage.setAllowScrolling(true, 'up');
+            $header_top.css('background', 'rgba(0, 47, 77, .3)');
+            $nav.css('background', 'rgba(0, 47, 77, .25)');
+            }
+        } 
+        });
+        </script>
         
-        <section id="cv" class="photo">
-            <br/>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-
-        </footer>
     </body>
-
-    <!-- Scripts -->
-    <script src="assets/js/fullpage.js"></script>
-    <script src="assets/js/scrolloverflow.js"></script>
 
 </html>
