@@ -176,6 +176,10 @@ section.scroll#start p {
   color: yellow;
   font-family: 'Kreon', sans-serif;
 }
+.scroll#presentation p.test {
+  color: yellow;
+  font-family: 'Quicksand', sans-serif;
+}
 
 .scroll#presentation div.job {
   border: 5px double #FFFFFF;
