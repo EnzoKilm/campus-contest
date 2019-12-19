@@ -27,7 +27,9 @@ Ajout de fullPage.js au site.
 15:43
 Correction de bugs toute la journée.
 
-
+Jour 3
+10:39
+Suite des modifications du site avec fullPage.js
 
 Copyrights images:
 
@@ -37,3 +39,5 @@ double-computer-background : Photo by Safar Safarov on Unsplash
 coding-background : Photo by Chris Ried on Unsplash
 background-computer-center : Photo by Arnold Francisca on Unsplash
 background-space : Photo by Jason Blackeye on Unsplash
+background-earth: Photo by NASA on Unsplash
+closed-computer : Photo by Jesus Kiteque on Unsplash
