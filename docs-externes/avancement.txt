@@ -31,6 +31,10 @@ Jour 3
 10:39
 Suite des modifications du site avec fullPage.js
 
+Jour 4
+Toute la journée:
+Continuation de la page contact + ajout des parties compétences et expériences sur la page principale
+
 Copyrights images:
 
 coding-background-blurr : Photo by Ilya Pavlov on Unsplash
