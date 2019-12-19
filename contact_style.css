@@ -1,26 +1,30 @@
 form {
     margin: 0 auto;
-    width: 400px;
-    padding:  1em;
+    width: 550px;
     border:  1px solid #CCC;
     border-radius: 1em;
+    padding-top: 5em;
+    background-color: rgba(243, 243, 243, 0.664);
+    padding-left: 50px;
 }
 
 form div + div {
-    margin-top: 1em;
+    margin-top: 4em;
 }
 
 label {
     display: inline-block;
-    width: 90px;
+    width: 88px;
     text-align: right;
+    font : normal 300 16px/1 'Comfortaa', cursive;
+    color: whitesmoke;
 }
 
 input, textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 3px solid #999;
 }
 
 input:focus, textarea:focus {
@@ -29,13 +33,19 @@ input:focus, textarea:focus {
 
 textarea {
     vertical-align: top;
-    height: 5em;
+    height: 7em;
 }
 
 button {
-    margin-left: 0.5em;
+    margin-left: 125px;
+    font : normal 300 18px/1 'Comfortaa', cursive;
+    margin-bottom: 25px;
 }
 
-/*body {
-    background-image: url(https://images.unsplash.com/photo-1557200134-90327ee9fafa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-}
+body {
+    /*background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 85px;*/
+    background-color: wheat;
+    
