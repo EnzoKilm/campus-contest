@@ -128,27 +128,27 @@ section.scroll#start p {
   padding-left: 25%;
 }
 
-.scroll#presentation img {
-  border: 5px double #FFFFFF;
-  margin-left: 60px;
-  height: 516px;
-  width: 480px;
-  background: url(../images/background-space.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .scroll#presentation div.border {
   display: inline-block;
   border: 5px double #FFFFFF;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.scroll#presentation div.langages {
+  overflow-y: scroll;
+  position: absolute;
+  border: 5px double #FFFFFF;
+  margin-left: 60px;
+  width: 35%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  top: 50%;
 }
 
 .scroll#presentation div.experiences {
-  overflow-y: scroll; 
-  height: 516px;
+  overflow-y: scroll;
+  height: 35em;
   border: 5px double #FFFFFF;
   float: right;
   width: 50%;
@@ -156,6 +156,12 @@ section.scroll#start p {
 }
 
 .scroll#presentation h1 {
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scroll#presentation h2 {
   color: red;
 }
 
