@@ -5,7 +5,7 @@ form {
     border-radius: 1em;
     padding-top: 5em;
     background-color: rgba(243, 243, 243, 0.664);
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 form div + div {
@@ -37,15 +37,61 @@ textarea {
 }
 
 button {
-    margin-left: 125px;
+    margin-left: 248px;
     font : normal 300 18px/1 'Comfortaa', cursive;
     margin-bottom: 25px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
 }
 
+.logo {
+    padding-left: 355px;
+}
 body {
-    /*background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+    background-image: url('../campus-contest/assets/images/cul4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 85px;*/
-    background-color: wheat;
+    padding-top: 60px;
+    /*background-color: wheat;*/
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=mail], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[id=msg], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
     
