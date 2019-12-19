@@ -3,9 +3,6 @@
 html {
   scroll-behavior: smooth;
 }
-/* body {
-    overflow: hidden;
-} */
 
 * {
   margin: 0;
@@ -124,15 +121,18 @@ section.scroll#start p {
 }
 #presentation p {
   text-align: center;
-  width: 50%;
-  padding-left: 25%;
+  width: 90%;
+  padding-left: 5%;
 }
 
 .scroll#presentation div.border {
-  display: inline-block;
+  display: contents;
   border: 5px double #FFFFFF;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin: 50px 20px 50px 20px;
+  position: relative;
+
 }
 
 .scroll#presentation div.competences {
@@ -170,6 +170,7 @@ section.scroll#start p {
 
 .scroll#presentation p {
   color: yellow;
+  width
 }
 
 .scroll#presentation div.job {
