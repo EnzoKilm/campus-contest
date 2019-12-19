@@ -135,7 +135,7 @@ section.scroll#start p {
   margin-bottom: 50px;
 }
 
-.scroll#presentation div.langages {
+.scroll#presentation div.competences {
   overflow-y: scroll;
   position: absolute;
   border: 5px double #FFFFFF;
@@ -144,6 +144,8 @@ section.scroll#start p {
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   top: 50%;
+  padding-bottom: 50px;
+  height: 34em;
 }
 
 .scroll#presentation div.experiences {
@@ -153,12 +155,13 @@ section.scroll#start p {
   float: right;
   width: 50%;
   margin-right: 60px;
+  padding-bottom: 25px;
 }
 
 .scroll#presentation h1 {
   color: green;
   text-align: center;
-  margin-top: 20px;
+  margin: 25px 0 25px 0;
 }
 
 .scroll#presentation h2 {
@@ -167,4 +170,10 @@ section.scroll#start p {
 
 .scroll#presentation p {
   color: yellow;
+}
+
+.scroll#presentation div.job {
+  border: 5px double #FFFFFF;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
 }
