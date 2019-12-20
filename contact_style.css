@@ -97,7 +97,7 @@ textarea[id=msg], select {
 
 @media only screen and (max-width: 767px) {
     .logo {
-        left: 5px;
+        align-content: center;
         
 
     }

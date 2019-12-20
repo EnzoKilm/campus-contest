@@ -1,4 +1,4 @@
-Jour 1
+﻿Jour 1
 
 09:54
 Création du répository GitHub pour la gestion du projet.
@@ -30,6 +30,7 @@ Correction de bugs toute la journée.
 Jour 3
 10:39
 Suite des modifications du site avec fullPage.js
+recherche fullpage.js scrollside(abandon car payant)
 
 Jour 4
 Toute la journée:
