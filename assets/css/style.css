@@ -136,7 +136,7 @@ section.scroll#start a span::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#avis{
+#avis, #bottom{
   background: url(../images/background-space-2.jpg);
   height: 100%;
   background-position: center;
@@ -299,11 +299,18 @@ section.scroll#start a span::after {
 }
 
 /* Bottom (footer) */
-.scroll #bottom {
-  background-color: #fff;
+#bottom {
+  background-color: #000;
   bottom: 0;
   font-family: 'Comfortaa', cursive;
 }
+
+#bottom h1 {
+  color: red;
+  font-size: 20px;
+  display: inline-block;
+}
+
 
 /* Icones réseaux sociaux */
 ul.rs {
