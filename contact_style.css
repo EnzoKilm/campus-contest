@@ -5,7 +5,7 @@ form {
     border-radius: 1em;
     padding-top: 5em;
     background-color: rgba(243, 243, 243, 0.664);
-    padding-left: 10px;
+    padding-left: 50px;
 }
 
 form div + div {
@@ -37,19 +37,9 @@ textarea {
 }
 
 button {
-    margin-left: 248px;
+    margin-left: 125px;
     font : normal 300 18px/1 'Comfortaa', cursive;
     margin-bottom: 25px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .logo {
@@ -97,13 +87,13 @@ textarea[id=msg], select {
 }
 
 
-/*@media (max-width: 598px) {
+@media (max-width: 598px) {
     .form {
     
         width: 350px;
 
     }
-}*/
+}
 
 @media only screen and (max-width: 767px) {
     .logo {
