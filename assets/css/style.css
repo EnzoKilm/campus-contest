@@ -427,14 +427,8 @@ ul.rs a.cercle#github:focus i {
   }
 }
 
-/* @media only screen and (max-width: 628px) {
-	ul.rs {
-		position: inherit;
-		top: inherit;
-		right: inherit;
-	}
-
-	section.header_title h1 {
-		font-size: 30px;
-	}
-} */
+@media only screen and (max-width: 500px) {
+	.scroll#presentation div.competences {
+    top: 0;
+  }
+}
