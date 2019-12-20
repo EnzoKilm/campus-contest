@@ -53,13 +53,16 @@ button {
 }
 
 .logo {
-    padding-left: 355px;
+    margin-left: 358px;
+
 }
 body {
-    background-image: url('../campus-contest/assets/images/cul4.jpg');
+    background-image: url('../campus-contest/assets/images/new2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 60px;
+    background-position: center;
+    background-attachment: fixed;
     /*background-color: wheat;*/
 }
 
@@ -93,5 +96,21 @@ textarea[id=msg], select {
     box-sizing: border-box;
 }
 
+
+/*@media (max-width: 598px) {
+    .form {
+    
+        width: 350px;
+
+    }
+}*/
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        left: 5px;
+        
+
+    }
+  }
 
     
