@@ -4,6 +4,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ::-webkit-scrollbar{
+  width:10px;
+  background-color:#cccccc;
+}
+::-webkit-scrollbar-track{
+  border:1px #787878 solid;
+  border-radius:10px;
+  -webkit-box-shadow:0 0 6px #f2f2f2 inset;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#c6c6c6;
+  border:1px solid #000000;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:#e0e0e0;
+  border:1px solid #333333;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color:#c6c6c6;
+  border:1px solid #000000;
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +49,7 @@ section.scroll#start h1 {
   font : normal 300 78px/1 'Comfortaa', cursive;
   text-align: center;
   white-space: nowrap;
+text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
 }
 section.scroll#start p {
     position: relative;
@@ -132,57 +155,81 @@ section.scroll#start p {
   margin-bottom: 50px;
   margin: 50px 20px 50px 20px;
   position: relative;
-  /* font-family: 'Kreon', sans-serif; */
-
+  font-family: 'Quicksand', sans-serif;
 }
 
 .scroll#presentation div.competences {
   overflow-y: scroll;
   position: absolute;
-  border: 5px double #FFFFFF;
   margin-left: 60px;
   width: 35%;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   top: 50%;
-  padding-bottom: 50px;
-  height: 34em;
+  height: 37.5em;
 }
 
 .scroll#presentation div.experiences {
   overflow-y: scroll;
-  height: 35em;
-  border: 5px double #FFFFFF;
+  height: 38em;
   float: right;
   width: 50%;
   margin-right: 60px;
-  padding-bottom: 25px;
 }
 
 .scroll#presentation h1 {
-  color: green;
   text-align: center;
-  margin: 25px 0 25px 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424;
 }
 
 .scroll#presentation h2 {
-  color: red;
+  color: #fff;
+  margin-top: -12px;
+  margin-bottom: 6px;
+  text-shadow: 3px 2px 3px #121212, 3px 3px 3px #121212, 3px 4px 3px #121212;
 }
 
-.scroll#presentation p {
-  color: yellow;
-}
-.scroll#presentation p.description {
-  color: yellow;
-  font-family: 'Kreon', sans-serif;
-}
-.scroll#presentation p.test {
-  color: yellow;
-  font-family: 'Quicksand', sans-serif;
+.scroll#presentation .experiences p {
+  color: #c6c6c6;
+  font-weight: bold;
 }
 
 .scroll#presentation div.job {
-  border: 5px double #FFFFFF;
   padding: 10px 10px 10px 10px;
-  margin-bottom: 10px;
+}
+
+.scroll#presentation hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding-bottom: -50px;
+}
+.scroll#presentation hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -32px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+.scroll#presentation #skill hr {
+  width: 140%;
+  margin: 0 -20% 0 -20%;
 }
