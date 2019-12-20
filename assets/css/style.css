@@ -233,3 +233,35 @@ section.scroll#start p {
   width: 140%;
   margin: 0 -20% 0 -20%;
 }
+
+.scroll#projets div.line {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.scroll#projets div.line .projet {
+  display: inline-block;
+	width: 250px;
+	height: 250px;
+  border-style: dotted solid;
+  border-color: #fff;
+  margin-right: 10%;
+  overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.scroll#projets div.line .projet p {
+  margin-top: -200px;
+}
+.scroll#projets div.line .projet:hover p {
+  color: red;
+  margin-top: -0;
+  -webkit-transition: all 1s ease-out 0.1s;
+  -moz-transition: all 1s ease-out 0.1s;
+  -o-transition: all 1s ease-out 0.1s;
+  -ms-transition: all 1s ease-out 0.1s;
+  transition: all 1s ease-out 0.1s;
+	background-color: rgba(250, 250, 250, 0.6);
+}
