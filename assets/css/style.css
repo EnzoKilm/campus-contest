@@ -53,7 +53,7 @@ section.scroll#start a {
   border-radius: 0 0 0 10px;
 }
 section.scroll#start a:hover p {
-  color: #2c2c2c;
+  color: #adadad;
 }
 
 section.scroll#start h1#nom {
@@ -351,51 +351,90 @@ ul.rs li a:visited {
 }
 
 ul.rs a.cercle {
-	border-radius: 26px;
-	-moz-border-radius: 26px;
-	-webkit-border-radius: 26px;
+	border-radius: 28px;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
 	color: #ffffff;
 	display: inline-block;
 	font-weight: bold;
 	line-height: 1.6em;
 	margin-right: 5px;
 	text-align: center;
-	width: 1.6em; 
+	width: 1.6em;
 }
 
 ul.rs a.cercle#facebook {
 	background: #4267B2;
 }
-ul.rs a.cercle#facebook:hover, ul.rs a.cercle#facebook:focus {
+ul.rs a.cercle#facebook:hover, 
+ul.rs a.cercle#facebook:focus {
 	background: #FFF;
 }
-ul.rs a.cercle#facebook:hover i, ul.rs a.cercle#facebook:focus i {
+ul.rs a.cercle#facebook:hover i, 
+ul.rs a.cercle#facebook:focus i {
 	color: #4267B2;
 }
 ul.rs a.cercle#twitter {
 	background: #1DA1F2;
 }
-ul.rs a.cercle#twitter:hover, ul.rs a.cercle#twitter:focus {
+ul.rs a.cercle#twitter:hover, 
+ul.rs a.cercle#twitter:focus {
 	background: #FFF;
 }
-ul.rs a.cercle#twitter:hover i, ul.rs a.cercle#twitter:focus i {
+ul.rs a.cercle#twitter:hover i, 
+ul.rs a.cercle#twitter:focus i {
 	color: #1DA1F2;
 }
 ul.rs a.cercle#instagram {
 	background: #E1306C;
 }
-ul.rs a.cercle#instagram:hover,ul.rs a.cercle#instagram:focus {
+ul.rs a.cercle#instagram:hover, 
+ul.rs a.cercle#instagram:focus {
 	background: #FFF;
 }
-ul.rs a.cercle#instagram:hover i, ul.rs a.cercle#instagram:focus i {
+ul.rs a.cercle#instagram:hover i, 
+ul.rs a.cercle#instagram:focus i {
 	color: #E1306C;
 }
 ul.rs a.cercle#github {
 	background: #333;
 }
-ul.rs a.cercle#github:hover, ul.rs a.cercle#github:focus {
+ul.rs a.cercle#github:hover, 
+ul.rs a.cercle#github:focus {
 	background: #FFF;
 }
-ul.rs a.cercle#github:hover i, ul.rs a.cercle#github:focus i {
+ul.rs a.cercle#github:hover i, 
+ul.rs a.cercle#github:focus i {
 	color: #333;
 }
+
+/* Responsive */
+@media only screen and (max-width: 1260px) {
+	.scroll#presentation div.competences {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(50%, 0%);
+    transform: translate(50%, 0%);
+    width: 50%;
+    margin: 40px 0 30px 0;
+  }
+  
+	.scroll#presentation div.experiences {
+    float: left;
+    -webkit-transform: translate(50%, 0%);
+    transform: translate(50%, 0%);
+    margin: 30px 0 40px 0;
+  }
+}
+
+/* @media only screen and (max-width: 628px) {
+	ul.rs {
+		position: inherit;
+		top: inherit;
+		right: inherit;
+	}
+
+	section.header_title h1 {
+		font-size: 30px;
+	}
+} */
