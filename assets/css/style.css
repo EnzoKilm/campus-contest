@@ -48,12 +48,15 @@ section.scroll#start a {
   text-align: center;
   text-decoration: none;
   text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
+  border-style: solid;
+  border-width: 0 0 3px 3px;
+  border-radius: 0 0 0 10px;
 }
-section.scroll#start a:hover {
+section.scroll#start a:hover p {
   color: #2c2c2c;
 }
 
-section.scroll#start h1 {
+section.scroll#start h1#nom {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -66,7 +69,7 @@ section.scroll#start h1 {
   white-space: nowrap;
   text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
 }
-section.scroll#start p {
+section.scroll#start p#metier {
     position: relative;
     top: 60%;
     left: 50%;
