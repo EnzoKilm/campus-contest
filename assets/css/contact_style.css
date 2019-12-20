@@ -3,7 +3,8 @@ form {
     margin: 0 0 10% 0;;
     padding: 2% 2% 2% 2%;
     width: 65%;
-    height: 60%;
+    height: 75%;
+    min-height: 410px;
     border:  1px solid #CCC;
     border-radius: 1em;
     background-color: rgba(243, 243, 243, 0.664);
@@ -59,6 +60,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    margin-top: 5%;
 }
 button:hover,
 button:focus {
