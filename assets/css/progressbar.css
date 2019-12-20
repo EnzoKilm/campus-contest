@@ -55,6 +55,9 @@ body { background: #E9E5E2 ; }
 #skill i#git {
     color: #F1502F;
 }
+#skill i#sql {
+    color: #495057;
+}
 
 #skill p {
     text-align: right;
@@ -138,6 +141,19 @@ body { background: #E9E5E2 ; }
 	background-image: -ms-linear-gradient(top, #F1502F, #F1502F);
 	background-image: -o-linear-gradient(top, #F1502F, #F1502F);
 	background-image: linear-gradient(top, #F1502F, #F1502F)	
+}
+
+.sql {
+	width:25%;
+	-moz-animation:wordpress 2s ease-out;
+	-webkit-animation:wordpress 2s ease-out;
+	background-color: #495057;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#495057), to(#495057));
+	background-image: -webkit-linear-gradient(top, #495057, #495057);
+	background-image: -moz-linear-gradient(top, #495057, #495057);
+	background-image: -ms-linear-gradient(top, #495057, #495057);
+	background-image: -o-linear-gradient(top, #495057, #495057);
+	background-image: linear-gradient(top, #495057, #495057)	
 }
 
 @-moz-keyframes html   { 0%  { width:0px;} 100%{ width:70%;}  }
