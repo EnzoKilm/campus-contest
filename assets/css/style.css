@@ -37,6 +37,22 @@ section.scroll {
 }
 
 /* Start */
+section.scroll#start a {
+  position: absolute;
+  top: 1%;
+  left: 94%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-style: 'Comfortaa', cursive;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+section.scroll#start a:hover {
+  color: #2c2c2c;
+}
+
 section.scroll#start h1 {
   position: absolute;
   top: 50%;
@@ -48,13 +64,13 @@ section.scroll#start h1 {
   font : normal 300 78px/1 'Comfortaa', cursive;
   text-align: center;
   white-space: nowrap;
-text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
+  text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
 }
 section.scroll#start p {
     position: relative;
     top: 60%;
     left: 50%;
-    z-index: 2;
+    z-index: 1;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff;
@@ -136,7 +152,7 @@ section.scroll#start a span::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#avis, #bottom{
+#recommandations, #bottom{
   background: url(../images/background-space-2.jpg);
   height: 100%;
   background-position: center;
@@ -277,8 +293,8 @@ section.scroll#start a span::after {
   height: 100%;
 }
 
-/* Avis */
-.scroll#avis div.slide h1{
+/* Recommandations */
+.scroll#recommandations div.slide h1{
   font-size: 20px;
   font-family: arial,helvetica;
   color: #fff;
@@ -288,7 +304,7 @@ section.scroll#start a span::after {
   margin-left: 20%;
 }
 
-.scroll#avis div.slide h2{
+.scroll#recommandations div.slide h2{
   font-size: 20px;
   font-family: arial,helvetica;
   color: #fff;
@@ -300,24 +316,28 @@ section.scroll#start a span::after {
 
 /* Bottom (footer) */
 #bottom {
+  padding-top: 30px;
   background-color: #000;
   bottom: 0;
   font-family: 'Comfortaa', cursive;
 }
 
 #bottom h1 {
-  color: red;
+  color: #fff;
   font-size: 20px;
-  display: inline-block;
+  width: 50%;
+  padding-left: 10%
 }
-
 
 /* Icones réseaux sociaux */
 ul.rs {
 	list-style-type: none;
   position: relative;
-  width: 100%;
-  right: 0;
+  width: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  left: 70%;
+  margin-top: -10px;
 }
 
 ul.rs li {
