@@ -76,7 +76,7 @@ body { background: #E9E5E2 ; }
 }
 
 .html {
-	width:100%; 
+	width:70%; 
 	-moz-animation:graphic-design 2s ease-out;
 	-webkit-animation:graphic-design 2s ease-out;
 	background-color: #E44D26;
@@ -89,7 +89,7 @@ body { background: #E9E5E2 ; }
 }
 
 .css {
-	width:90%;
+	width:50%;
 	-moz-animation:html-css 2s ease-out;
 	-webkit-animation:html-css 2s ease-out;
 	background-color: #3C99DC;
@@ -102,7 +102,7 @@ body { background: #E9E5E2 ; }
 }
 
 .js {
-	width:65%;
+	width:30%;
 	-moz-animation:jquery 2s ease-out;
 	-webkit-animation:jquery 2s ease-out;
 	background-color: #FDC72E;
@@ -115,7 +115,7 @@ body { background: #E9E5E2 ; }
 }
 
 .python {
-	width:80%;
+	width:65%;
 	-moz-animation:wordpress 2s ease-out;
 	-webkit-animation:wordpress 2s ease-out;
 	background-color: #306998;
@@ -128,7 +128,7 @@ body { background: #E9E5E2 ; }
 }
 
 .git {
-	width:80%;
+	width:20%;
 	-moz-animation:wordpress 2s ease-out;
 	-webkit-animation:wordpress 2s ease-out;
 	background-color: #F1502F;
