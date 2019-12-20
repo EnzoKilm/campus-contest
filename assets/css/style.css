@@ -64,24 +64,6 @@ section.scroll#start p {
     padding-top: 35px;
 }
 
-.scroll a {
-  position: absolute;
-  bottom: 20px;
-  left: 48%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'Comfortaa', cursive;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
-.scroll a:hover {
-  opacity: .5;
-}
-
 #start a {
   padding-top: 60px;
 }
@@ -209,7 +191,6 @@ section.scroll#start p {
 }
 
 .scroll#presentation hr {
-  overflow: visible; /* For IE */
   height: 30px;
   border-style: solid;
   border-color: #fff;
@@ -234,34 +215,49 @@ section.scroll#start p {
   margin: 0 -20% 0 -20%;
 }
 
-.scroll#projets div.line {
-  margin-top: 5%;
-  margin-left: 15%;
-}
+/* .scroll#projets */
 
-.scroll#projets div.line .projet {
+.scroll#projets .projet {
   display: inline-block;
 	width: 250px;
-	height: 250px;
-  border-style: dotted solid;
-  border-color: #fff;
-  margin-right: 10%;
+  height: 250px;
+  margin: 1.5% -4% 1.5% 14%;
   overflow: hidden;
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 20px;
 }
 
-.scroll#projets div.line .projet p {
-  margin-top: -200px;
+/* .scroll#projets .projet a {
+} */
+
+.scroll#projets .projet span {
+  display: inline-block;
+  color: #000;
+  margin-top: 77%;
+  transition: all 1.4s ease;
+  font-family: 'Comfortaa', cursive;
 }
-.scroll#projets div.line .projet:hover p {
-  color: red;
-  margin-top: -0;
-  -webkit-transition: all 1s ease-out 0.1s;
-  -moz-transition: all 1s ease-out 0.1s;
-  -o-transition: all 1s ease-out 0.1s;
-  -ms-transition: all 1s ease-out 0.1s;
-  transition: all 1s ease-out 0.1s;
-	background-color: rgba(250, 250, 250, 0.6);
+
+.scroll#projets .projet:hover span,
+.scroll#projets .projet:focus span {
+  margin-top: 0%;
+  transition: all 0.8s ease;
+  padding: 5% 5% 5% 5%;
+  background-color: rgba(250, 250, 250, 0.8);
+}
+
+.scroll#projets .projet span.titre {
+  text-transform: uppercase;
+  background-color: #E6E2DF;
+  width: 100%;
+  text-align: center;
+  padding: 8% 5% 8% 0;
+}
+
+.scroll#projets .projet span.description {
+  height: 100%;
 }
