@@ -39,15 +39,15 @@ section.scroll {
 /* Start */
 section.scroll#start a {
   position: absolute;
-  top: 1%;
-  left: 94%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  background-color: red;
+  padding: 20px 20px 20px 20px;
+  top: 0;
+  right: 0;
   color: #fff;
-  font-style: 'Comfortaa', cursive;
-  font-size: 40px;
+  font : normal 300 28px/1 'Comfortaa', cursive;
   text-align: center;
   text-decoration: none;
+  text-shadow: 1px 0px 1px #0E121E, 0px 1px 1px #07060A, 2px 1px 1px #0E121E, 1px 2px 1px #07060A, 3px 2px 1px #0E121E, 2px 3px 1px #07060A, 4px 3px 1px #0E121E, 3px 4px 1px #07060A, 5px 4px 1px #0E121E, 4px 5px 1px #07060A, 6px 5px 1px #0E121E, 5px 6px 1px #07060A, 7px 6px 1px #0E121E;
 }
 section.scroll#start a:hover {
   color: #2c2c2c;
@@ -79,9 +79,6 @@ section.scroll#start p {
     padding-top: 35px;
 }
 
-section.scroll#start a {
-  padding-top: 60px;
-}
 section.scroll#start a span {
   position: absolute;
   top: 0;
