@@ -45,3 +45,5 @@ background-computer-center : Photo by Arnold Francisca on Unsplash
 background-space : Photo by Jason Blackeye on Unsplash
 background-earth: Photo by NASA on Unsplash
 closed-computer : Photo by Jesus Kiteque on Unsplash
+background-america : Photo by NASA on Unsplash
+background-space-2: Photo by Jeremy Perkins on Unsplash
