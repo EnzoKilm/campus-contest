@@ -6,29 +6,57 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
   
 .container {
     height: 100%;
-    background: yellow;
 }
 
 .header {
     height: 100%;
     background: red;
+    position: relative;
+    background: url(../images/background-flowers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 .projets {
+    position: relative;
+    background-color: #212121;
     height: auto;
-    background: green;
+    overflow: hidden;
+    margin-top: -113px;
+    height: 120%;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.arrow-down {
+    color: #fff;
+    font-size: 50px;
+    height: 100px;
+}
+.arrow-down:hover, a.arrow-down:focus {
+    color: #808080;
 }
 
-
-.recommendations {
+.quotes {
+    position: relative;
+    background: url(../images/quotes-placeholder-empty.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: auto;
-    background: blue;
+    margin-top: -140px;
+    height: 120%;
 }
-
 
 /* @media only screen and (max-width: 1024px) {
     .header {
