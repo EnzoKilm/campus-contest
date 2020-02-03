@@ -13,6 +13,7 @@ html, body {
     height: 100%;
 }
 
+/* PARTIE DU HEADER (1ERE DIV) */
 .header {
     height: 100%;
     background: red;
@@ -25,8 +26,57 @@ html, body {
     z-index: 2;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    font-family: 'Comfortaa', cursive;
+}
+.arrow-down {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 3px 2px 3px #202020, 3px 3px 3px #202020, 3px 4px 3px #202020;
+}
+.arrow-down:hover, a.arrow-down:focus {
+    color: #dadada;
+    text-shadow: 3px 2px 3px #202020, 3px 3px 3px #202020, 3px 4px 3px #202020;
+}.main {
+    display: table;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+.title {
+	  display: table-cell;
+	  vertical-align: middle;
+}
+.title .name {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 60px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none solid #444444;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424;
+    display: inline-block;
+    padding-right: 12px;
+    animation: type .5s alternate infinite;
+}
+.title .description {
+    color: #fff;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-bottom: 6px;
+    text-shadow: 3px 2px 3px #202020, 3px 3px 3px #202020, 3px 4px 3px #202020;
 }
 
+@keyframes type{
+    from{box-shadow: inset -3px 0px 0px #2e2e2e;}
+    to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+/* PARTIE DES PROJETS (2EME DIV) */
 .projets {
     position: relative;
     background-color: #212121;
@@ -38,15 +88,51 @@ html, body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
-.arrow-down {
-    color: #fff;
-    font-size: 50px;
-    height: 100px;
-}
-.arrow-down:hover, a.arrow-down:focus {
-    color: #808080;
+.box {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    height:125px;
+    background: #4B6D15;
 }
 
+.box a {
+    line-height:125px;
+}
+.sub-title {
+    color: #fff;
+    font-size: 30px;
+    margin: 50px 20px 20px 20px;
+    text-shadow: 3px 2px 3px #202020, 3px 3px 3px #202020, 3px 4px 3px #202020;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    left: 0;
+    margin: auto 0 auto 20px;
+}
+.sub-title::after {
+  content: "";
+  position: absolute;
+}
+.box .sub-title::after {
+  top: 65%;
+  height: 2px;
+  width: 0%;
+  left: 5%;
+  background-color: #D5D2CB;
+    transition: 0.5s ease all .3s;
+}
+.box:hover .sub-title::after {
+  width: 90%;
+    transition: 0.3s ease all;
+}
+
+/* PARTIE DES RECOMMANDATIONS (3EME DIV) */
 .quotes {
     position: relative;
     background: url(../images/quotes-placeholder-empty.png);
@@ -54,10 +140,9 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    margin-top: -140px;
+    margin-top: -136px;
     height: 120%;
 }
-
 /* @media only screen and (max-width: 1024px) {
     .header {
         height: 800px;
